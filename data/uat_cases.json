@@ -1,0 +1,72 @@
+[
+  {
+    "case_id": "UAT-001",
+    "requirement_id": "REQ-001",
+    "request": {
+      "customer_id": "SYN-001",
+      "channel": "mobile",
+      "consent": true,
+      "idempotency_key": "mobile-001"
+    },
+    "expected_status": "activated"
+  },
+  {
+    "case_id": "UAT-002",
+    "requirement_id": "REQ-001",
+    "request": {
+      "customer_id": "SYN-002",
+      "channel": "partner",
+      "consent": true,
+      "idempotency_key": "partner-002"
+    },
+    "expected_status": "rejected",
+    "expected_error": "INVALID_CHANNEL"
+  },
+  {
+    "case_id": "UAT-003",
+    "requirement_id": "REQ-002",
+    "request": {
+      "customer_id": "REAL-003",
+      "channel": "web",
+      "consent": true,
+      "idempotency_key": "web-003-key"
+    },
+    "expected_status": "rejected",
+    "expected_error": "INVALID_CUSTOMER"
+  },
+  {
+    "case_id": "UAT-004",
+    "requirement_id": "REQ-003",
+    "request": {
+      "customer_id": "SYN-004",
+      "channel": "branch",
+      "consent": false,
+      "idempotency_key": "branch-004"
+    },
+    "expected_status": "rejected",
+    "expected_error": "CONSENT_REQUIRED"
+  },
+  {
+    "case_id": "UAT-005",
+    "requirement_id": "REQ-004",
+    "request": {
+      "customer_id": "SYN-005",
+      "channel": "web",
+      "consent": true,
+      "idempotency_key": "web-005-key"
+    },
+    "expected_status": "activated"
+  },
+  {
+    "case_id": "UAT-006",
+    "requirement_id": "REQ-004",
+    "request": {
+      "customer_id": "SYN-006",
+      "channel": "mobile",
+      "consent": true,
+      "idempotency_key": "short"
+    },
+    "expected_status": "rejected",
+    "expected_error": "INVALID_IDEMPOTENCY_KEY"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "REQ-001",
+    "statement": "The service accepts activations from mobile, web, and branch channels.",
+    "priority": "must"
+  },
+  {
+    "id": "REQ-002",
+    "statement": "Only synthetic customer identifiers beginning with SYN- are accepted.",
+    "priority": "must"
+  },
+  {
+    "id": "REQ-003",
+    "statement": "Explicit consent is required before activation.",
+    "priority": "must"
+  },
+  {
+    "id": "REQ-004",
+    "statement": "A valid idempotency key produces the same activation identifier on retry.",
+    "priority": "must"
+  },
+  {
+    "id": "REQ-005",
+    "statement": "Every UAT case maps to one requirement and emits a machine-readable result.",
+    "priority": "must"
+  }
+]
