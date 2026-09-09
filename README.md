@@ -3,6 +3,8 @@
 A synthetic, dependency-free reference project that makes the path from
 requirements to UAT, training, and rollout visible and testable.
 
+[![CI](https://github.com/oguzhanozfe/enterprise-implementation-lab/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/oguzhanozfe/enterprise-implementation-lab/actions/workflows/ci.yml)
+
 > Portfolio scope: this is a fictional implementation lab built with synthetic
 > data. It is not a production banking system and contains no client code,
 > customer data, credentials, or confidential documentation.
